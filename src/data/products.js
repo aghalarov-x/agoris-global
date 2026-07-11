@@ -1,0 +1,55 @@
+export const products = [
+  {
+    id: 'almonds',
+    title: 'Almonds',
+    description:
+      'Nonpareil and Carmel varieties. Sourced from the USA, premium crunchy texture and consistent quality.',
+    image: '/images/products/almonds.jpg',
+    imageAlt: 'Premium raw almonds',
+    badge: null,
+    disabled: false,
+    grayscale: false,
+  },
+  {
+    id: 'cashews',
+    title: 'Cashews',
+    description:
+      'W180, W240, and W320 grade. Sourced from Ivory Coast, creamy taste and consistent kernel quality.',
+    image: '/images/products/cashews.jpg',
+    imageAlt: 'Premium ivory-colored cashews',
+    badge: null,
+    disabled: false,
+    grayscale: false,
+  },
+  {
+    id: 'hazelnuts',
+    title: 'Hazelnuts',
+    description:
+      'Sourced from Azerbaijan and Türkiye, including Giresun-region varieties. Sizes ranging from 9-11mm to 13-15mm, natural or roasted.',
+    image: '/images/products/hazelnuts.jpg',
+    imageAlt: 'Premium shelled hazelnuts',
+    badge: null,
+    disabled: false,
+    grayscale: false,
+  },
+  {
+    id: 'raisins',
+    title: 'Raisins',
+    description: 'Uzbekistan origin, golden and dark varieties. Natural sun-dried, high sugar content.',
+    image: '/images/products/raisins.jpg',
+    imageAlt: 'Premium golden and dark raisins',
+    badge: null,
+    disabled: false,
+    grayscale: false,
+  },
+  {
+    id: 'macadamia',
+    title: 'Macadamia',
+    description: 'Kenya origin, raw and roasted styles. Premium grade kernels with rich buttery flavor.',
+    image: '/images/products/macadamia.jpg',
+    imageAlt: 'Premium macadamia nuts',
+    badge: 'Coming Soon',
+    disabled: true,
+    grayscale: true,
+  },
+];

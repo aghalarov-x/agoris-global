@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agoris Global | Premium Nut Exports</title>
+  <meta name="description" content="Agoris Global exports premium hazelnuts, almonds, cashews, raisins, and macadamia to global markets. Quality-assured supply with full traceability from orchard to port." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Agoris Global | Premium Nut Exports" />
+  <meta property="og:description" content="Premium nut exports to the global market. Hazelnuts, almonds, cashews, raisins, and more — sourced with quality and delivered with reliability." />
+  <meta property="og:image" content="./public/images/hero-nuts.jpg" />
+  <link rel="icon" type="image/svg+xml" href="./public/favicon.svg" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&amp;display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'on-background': '#191c1b',
+            'on-error-container': '#93000a',
+            'on-primary-container': '#92dcc0',
+            primary: '#004a38',
+            'tertiary-fixed-dim': '#dec1ac',
+            'outline-variant': '#bec9c3',
+            'primary-fixed-dim': '#8bd5b9',
+            'on-surface-variant': '#3f4944',
+            'surface-container-highest': '#e2e3e1',
+            'hazel-dark': '#5D3A1A',
+            error: '#ba1a1a',
+            'primary-fixed': '#a7f2d5',
+            'inverse-surface': '#2e3130',
+            'surface-tint': '#1c6a54',
+            'on-primary-fixed': '#002117',
+            'on-surface': '#191c1b',
+            tertiary: '#503c2c',
+            'on-error': '#ffffff',
+            'secondary-container': '#feb294',
+            'deep-forest': '#042D33',
+            'on-primary-fixed-variant': '#00513e',
+            'inverse-primary': '#8bd5b9',
+            outline: '#6f7974',
+            'surface-bright': '#f9faf8',
+            'surface-variant': '#e2e3e1',
+            'tertiary-fixed': '#fbddc7',
+            secondary: '#894f37',
+            'on-secondary': '#ffffff',
+            'surface-container-high': '#e7e8e6',
+            'success-green': '#2E7D32',
+            'secondary-fixed': '#ffdbce',
+            'surface-dim': '#d9dad8',
+            'on-tertiary': '#ffffff',
+            background: '#f9faf8',
+            'on-secondary-container': '#79422b',
+            'surface-container-low': '#f3f4f2',
+            'inverse-on-surface': '#f0f1ef',
+            'on-primary': '#ffffff',
+            surface: '#f9faf8',
+            'surface-container': '#edeeec',
+            'on-secondary-fixed-variant': '#6d3822',
+            'surface-container-lowest': '#ffffff',
+            'on-tertiary-fixed': '#28180b',
+            'secondary-fixed-dim': '#ffb598',
+            'primary-container': '#10634d',
+            'almond-cream': '#FAF9F6',
+            'error-container': '#ffdad6',
+            'on-tertiary-fixed-variant': '#574333',
+            'tertiary-container': '#695342',
+            'on-tertiary-container': '#e5c8b3',
+            'on-secondary-fixed': '#360f00',
+          },
+          borderRadius: {
+            DEFAULT: '0.125rem',
+            lg: '0.25rem',
+            xl: '0.5rem',
+            full: '0.75rem',
+          },
+          spacing: {
+            gutter: '24px',
+            base: '8px',
+            'section-gap': '120px',
+            'container-max': '1280px',
+            'margin-desktop': '64px',
+            'margin-mobile': '20px',
+          },
+          maxWidth: {
+            'container-max': '1280px',
+          },
+          fontFamily: {
+            'label-md': ['Hanken Grotesk', 'sans-serif'],
+            'body-md': ['Hanken Grotesk', 'sans-serif'],
+            'body-lg': ['Hanken Grotesk', 'sans-serif'],
+            'headline-lg': ['"Source Serif 4"', 'serif'],
+            'display-lg': ['"Source Serif 4"', 'serif'],
+            'display-lg-mobile': ['"Source Serif 4"', 'serif'],
+            'label-lg': ['Hanken Grotesk', 'sans-serif'],
+            'headline-md': ['"Source Serif 4"', 'serif'],
+          },
+          fontSize: {
+            'label-md': ['12px', { lineHeight: '16px', fontWeight: '500' }],
+            'body-md': ['16px', { lineHeight: '24px', fontWeight: '400' }],
+            'body-lg': ['18px', { lineHeight: '28px', fontWeight: '400' }],
+            'headline-lg': ['32px', { lineHeight: '40px', fontWeight: '600' }],
+            'display-lg': ['56px', { lineHeight: '64px', letterSpacing: '-0.02em', fontWeight: '700' }],
+            'display-lg-mobile': ['40px', { lineHeight: '48px', letterSpacing: '-0.02em', fontWeight: '700' }],
+            'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.05em', fontWeight: '600' }],
+            'headline-md': ['24px', { lineHeight: '32px', fontWeight: '600' }],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .animate-subtle-zoom {
+      animation: zoom 20s infinite alternate linear;
+    }
+    @keyframes zoom {
+      from { transform: scale(1); }
+      to { transform: scale(1.1); }
+    }
+    .gradient-overlay {
+      background: linear-gradient(to right, rgba(4, 45, 51, 0.8), rgba(4, 45, 51, 0.4));
+    }
+    .stagger-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .stagger-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+
+  <!-- Header -->
+  <header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-primary/10 shadow-sm transition-all duration-300 h-20">
+    <nav class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-20" aria-label="Main navigation">
+      <a href="#" class="block h-12" aria-label="Agoris Global home">
+        <img src="./public/images/logo.png" alt="Agoris Global logo" class="h-full w-auto object-contain" width="160" height="48" />
+      </a>
+      <div class="hidden md:flex items-center gap-base">
+        <a class="px-4 py-2 text-on-surface-variant font-label-lg text-label-lg hover:text-primary transition-colors duration-200" href="#about">About Us</a>
+        <a class="px-4 py-2 text-on-surface-variant font-label-lg text-label-lg hover:text-primary transition-colors duration-200" href="#products">Products</a>
+        <a class="px-4 py-2 text-on-surface-variant font-label-lg text-label-lg hover:text-primary transition-colors duration-200" href="#process">Logistics</a>
+        <a class="px-4 py-2 text-on-surface-variant font-label-lg text-label-lg hover:text-primary transition-colors duration-200" href="#contact">Contact</a>
+        <a class="ml-4 px-6 py-2.5 bg-primary text-on-primary font-label-lg text-label-lg rounded hover:opacity-90 transition-opacity" href="#contact">Get Quote</a>
+      </div>
+      <button id="mobile-menu-toggle" type="button" class="md:hidden text-primary p-2 rounded hover:bg-primary/10 transition-colors" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">
+        <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden flex-col bg-surface border-t border-primary/10 px-margin-mobile py-4 gap-1" role="navigation" aria-label="Mobile navigation">
+      <a class="block px-4 py-3 text-on-surface-variant font-label-lg text-label-lg hover:text-primary hover:bg-primary/5 rounded transition-colors" href="#about">About Us</a>
+      <a class="block px-4 py-3 text-on-surface-variant font-label-lg text-label-lg hover:text-primary hover:bg-primary/5 rounded transition-colors" href="#products">Products</a>
+      <a class="block px-4 py-3 text-on-surface-variant font-label-lg text-label-lg hover:text-primary hover:bg-primary/5 rounded transition-colors" href="#process">Logistics</a>
+      <a class="block px-4 py-3 text-on-surface-variant font-label-lg text-label-lg hover:text-primary hover:bg-primary/5 rounded transition-colors" href="#contact">Contact</a>
+      <a class="mt-2 px-4 py-3 bg-primary text-on-primary font-label-lg text-label-lg rounded text-center hover:opacity-90 transition-opacity" href="#contact">Get Quote</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="relative h-screen min-h-[600px] flex items-center overflow-hidden" aria-label="Hero">
+      <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-deep-forest/20 z-10 gradient-overlay"></div>
+        <div class="w-full h-full animate-subtle-zoom bg-cover bg-center" style="background-image: url('./public/images/hero-nuts.jpg')" role="img" aria-label="Assorted premium nuts including hazelnuts and cashews"></div>
+      </div>
+      <div class="relative z-20 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full">
+        <div class="max-w-2xl text-white space-y-6">
+          <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg leading-tight">
+            Premium Nut Exports to the Global Market
+          </h1>
+          <p class="font-body-lg text-body-lg text-almond-cream/90 leading-relaxed">
+            Distributing the highest quality hazelnuts, almonds, and cashews to global markets. World-class supply with our commitment to quality and reliability.
+          </p>
+          <div class="pt-8">
+            <a class="inline-flex items-center gap-2 px-8 py-4 bg-primary text-on-primary font-label-lg text-label-lg rounded hover:bg-primary-container transition-all group shadow-xl" href="#products">
+              Explore Our Products
+              <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" aria-hidden="true">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="py-section-gap bg-background" id="about">
+      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+          <div class="relative group stagger-in">
+            <div class="aspect-[4/5] overflow-hidden rounded-lg shadow-2xl">
+              <img alt="Modern commercial freight truck transporting premium nuts on a sun-drenched highway" class="w-full h-full object-cover" src="./public/images/about-truck.jpg" loading="lazy" width="640" height="800" />
+            </div>
+            <div class="absolute -bottom-8 -right-8 w-48 h-48 bg-primary-container/20 rounded-full blur-3xl -z-10" aria-hidden="true"></div>
+          </div>
+          <div class="space-y-8 stagger-in">
+            <div class="space-y-2">
+              <span class="text-primary font-label-lg text-label-lg tracking-widest uppercase">Who We Are</span>
+              <h2 class="font-headline-lg text-headline-lg text-deep-forest">Commitment to Global Excellence</h2>
+            </div>
+            <div class="space-y-6 text-on-surface-variant font-body-lg text-body-lg leading-relaxed">
+              <p>Agoris Global is a symbol of excellence in agricultural exports. Our history is built on a love for the land and precision in global logistics. We export not just products, but trust.</p>
+              <p>Collected from the world's most productive orchards, our nuts undergo quality checks in state-of-the-art laboratories. Currently, we deliver thousands of tons of premium products annually to markets in Europe, Asia, and America.</p>
+            </div>
+            <div class="grid grid-cols-2 gap-8 pt-4 border-t border-primary/10">
+              <div>
+                <div class="text-primary font-bold text-5xl mb-2">10+</div>
+                <div class="text-on-surface-variant font-label-md text-label-md">Years of Experience</div>
+              </div>
+              <div>
+                <div class="text-primary font-bold text-5xl mb-2">25+</div>
+                <div class="text-on-surface-variant font-label-md text-label-md">Export Countries</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="py-section-gap bg-almond-cream" id="products">
+      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+          <h2 class="font-headline-lg text-headline-lg text-deep-forest">Our Premium Selections</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant">Directly from the world's best orchards to your warehouse. Each product goes through strict selection and classification stages.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article class="bg-surface-container-lowest rounded-lg overflow-hidden group hover:shadow-2xl transition-all duration-500 border border-primary/5 relative">
+            <div class="aspect-square overflow-hidden">
+              <img alt="Premium raw almonds" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="./public/images/products/almonds.jpg" loading="lazy" width="400" height="400" />
+            </div>
+            <div class="p-8 space-y-4">
+              <h3 class="font-headline-md text-headline-md text-deep-forest">Almonds</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">Nonpareil and Carmel varieties. Sourced from the USA, premium crunchy texture and consistent quality.</p>
+              <a href="#contact" class="block w-full py-3 border border-primary text-primary font-label-lg text-label-lg rounded hover:bg-primary hover:text-white transition-colors duration-300 text-center">Inquire</a>
+            </div>
+          </article>
+          <article class="bg-surface-container-lowest rounded-lg overflow-hidden group hover:shadow-2xl transition-all duration-500 border border-primary/5 relative">
+            <div class="aspect-square overflow-hidden">
+              <img alt="Premium ivory-colored cashews" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="./public/images/products/cashews.jpg" loading="lazy" width="400" height="400" />
+            </div>
+            <div class="p-8 space-y-4">
+              <h3 class="font-headline-md text-headline-md text-deep-forest">Cashews</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">W180, W240, and W320 grade. Sourced from Ivory Coast, creamy taste and consistent kernel quality.</p>
+              <a href="#contact" class="block w-full py-3 border border-primary text-primary font-label-lg text-label-lg rounded hover:bg-primary hover:text-white transition-colors duration-300 text-center">Inquire</a>
+            </div>
+          </article>
+          <article class="bg-surface-container-lowest rounded-lg overflow-hidden group hover:shadow-2xl transition-all duration-500 border border-primary/5 relative">
+            <div class="aspect-square overflow-hidden">
+              <img alt="Premium shelled hazelnuts" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="./public/images/products/hazelnuts.jpg" loading="lazy" width="400" height="400" />
+            </div>
+            <div class="p-8 space-y-4">
+              <h3 class="font-headline-md text-headline-md text-deep-forest">Hazelnuts</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">Sourced from Azerbaijan and Türkiye, including Giresun-region varieties. Sizes ranging from 9-11mm to 13-15mm, natural or roasted.</p>
+              <a href="#contact" class="block w-full py-3 border border-primary text-primary font-label-lg text-label-lg rounded hover:bg-primary hover:text-white transition-colors duration-300 text-center">Inquire</a>
+            </div>
+          </article>
+          <article class="bg-surface-container-lowest rounded-lg overflow-hidden group hover:shadow-2xl transition-all duration-500 border border-primary/5 relative">
+            <div class="aspect-square overflow-hidden">
+              <img alt="Premium golden and dark raisins" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="./public/images/products/raisins.jpg" loading="lazy" width="400" height="400" />
+            </div>
+            <div class="p-8 space-y-4">
+              <h3 class="font-headline-md text-headline-md text-deep-forest">Raisins</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">Uzbekistan origin, golden and dark varieties. Natural sun-dried, high sugar content.</p>
+              <a href="#contact" class="block w-full py-3 border border-primary text-primary font-label-lg text-label-lg rounded hover:bg-primary hover:text-white transition-colors duration-300 text-center">Inquire</a>
+            </div>
+          </article>
+          <article class="bg-surface-container-lowest rounded-lg overflow-hidden group hover:shadow-2xl transition-all duration-500 border border-primary/5 relative">
+            <div class="absolute top-4 right-4 z-10 bg-secondary text-on-secondary px-3 py-1 rounded font-label-md text-label-md">Coming Soon</div>
+            <div class="aspect-square overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700">
+              <img alt="Premium macadamia nuts" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="./public/images/products/macadamia.jpg" loading="lazy" width="400" height="400" />
+            </div>
+            <div class="p-8 space-y-4">
+              <h3 class="font-headline-md text-headline-md text-deep-forest">Macadamia</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">Kenya origin, raw and roasted styles. Premium grade kernels with rich buttery flavor.</p>
+              <button class="w-full py-3 border border-outline text-outline font-label-lg text-label-lg rounded cursor-not-allowed" disabled aria-disabled="true">Coming Soon</button>
+            </div>
+          </article>
+        </div>
+        <div class="mt-16 text-center">
+          <a class="inline-flex items-center gap-2 px-8 py-3 bg-deep-forest text-on-primary font-label-lg text-label-lg rounded hover:opacity-90 transition-opacity" href="#contact">
+            <span class="material-symbols-outlined" aria-hidden="true">description</span>
+            Download Full Spec Sheet (PDF)
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications / Quality -->
+    <section class="py-section-gap bg-background" id="quality">
+      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+          <div class="space-y-8 stagger-in">
+            <div class="space-y-2">
+              <span class="text-primary font-label-lg text-label-lg tracking-widest uppercase">Our Standard</span>
+              <h2 class="font-headline-lg text-headline-lg text-deep-forest">Quality &amp; Traceability</h2>
+            </div>
+            <div class="space-y-6 text-on-surface-variant font-body-lg text-body-lg leading-relaxed">
+              <p>We believe in absolute transparency. Every batch undergoes a rigorous vetting process starting from origin selection to the final loading. Our quality guarantee includes:</p>
+              <ul class="space-y-4">
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary mt-1" aria-hidden="true">check_circle</span>
+                  <span><strong>Strict Origin Vetting:</strong> We only partner with audited orchards meeting global safety standards.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary mt-1" aria-hidden="true">check_circle</span>
+                  <span><strong>Laboratory Testing:</strong> Compulsory moisture, aflatoxin, and microbiological testing per shipment.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary mt-1" aria-hidden="true">check_circle</span>
+                  <span><strong>Full Traceability:</strong> Every bag is barcoded for batch-level tracking from farm to port.</span>
+                </li>
+              </ul>
+            </div>
+            <div class="grid gap-4 pt-8 grid-cols-3" aria-label="Certifications">
+              <div class="aspect-square bg-surface-container flex items-center justify-center rounded border border-outline-variant p-2 group hover:border-primary transition-colors">
+                <div class="text-center">
+                  <div class="text-[10px] font-bold text-on-surface-variant uppercase mb-1">ISO 22000</div>
+                  <div class="w-8 h-1 bg-primary/20 mx-auto" aria-hidden="true"></div>
+                </div>
+              </div>
+              <div class="aspect-square bg-surface-container flex items-center justify-center rounded border border-outline-variant p-2 group hover:border-primary transition-colors">
+                <div class="text-center">
+                  <div class="text-[10px] font-bold text-on-surface-variant uppercase mb-1">BRC</div>
+                  <div class="w-8 h-1 bg-primary/20 mx-auto" aria-hidden="true"></div>
+                </div>
+              </div>
+              <div class="aspect-square bg-surface-container flex items-center justify-center rounded border border-outline-variant p-2 group hover:border-primary transition-colors">
+                <div class="text-center">
+                  <div class="text-[10px] font-bold text-on-surface-variant uppercase mb-1">HALAL</div>
+                  <div class="w-8 h-1 bg-primary/20 mx-auto" aria-hidden="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stagger-in">
+            <img alt="Food laboratory professionals examining nut samples for quality control" class="rounded-lg shadow-xl w-full" src="./public/images/quality-lab.jpg" loading="lazy" width="640" height="480" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Agoris -->
+    <section class="py-section-gap bg-deep-forest text-on-primary" aria-labelledby="why-agoris-heading">
+      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="text-center mb-16">
+          <h2 id="why-agoris-heading" class="font-headline-lg text-headline-lg mb-4">Why Global Partners Choose Agoris</h2>
+        </div>
+        <div class="grid md:grid-cols-4 gap-8">
+          <div class="p-8 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
+            <span class="material-symbols-outlined text-4xl mb-4 text-primary-fixed" aria-hidden="true">schedule</span>
+            <h3 class="font-headline-md text-headline-md mb-2">On-Time Delivery</h3>
+            <p class="text-surface-variant/80 font-body-md">Precision logistics ensuring your supply chain never breaks.</p>
+          </div>
+          <div class="p-8 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
+            <span class="material-symbols-outlined text-4xl mb-4 text-primary-fixed" aria-hidden="true">troubleshoot</span>
+            <h3 class="font-headline-md text-headline-md mb-2">Full Traceability</h3>
+            <p class="text-surface-variant/80 font-body-md">Real-time data for every metric of your product's journey.</p>
+          </div>
+          <div class="p-8 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
+            <span class="material-symbols-outlined text-4xl mb-4 text-primary-fixed" aria-hidden="true">person_pin</span>
+            <h3 class="font-headline-md text-headline-md mb-2">Single Point</h3>
+            <p class="text-surface-variant/80 font-body-md">One account manager for all product lines and shipments.</p>
+          </div>
+          <div class="p-8 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
+            <span class="material-symbols-outlined text-4xl mb-4 text-primary-fixed" aria-hidden="true">payments</span>
+            <h3 class="font-headline-md text-headline-md mb-2">Competitive</h3>
+            <p class="text-surface-variant/80 font-body-md">Direct orchard sourcing provides the best market pricing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Logistics -->
+    <section class="py-section-gap bg-background overflow-hidden" id="process">
+      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="mb-20 text-center">
+          <h2 class="font-headline-lg text-headline-lg text-deep-forest">Logistics &amp; Packaging</h2>
+          <p class="font-body-lg text-on-surface-variant mt-4">Professionalism in every step of the export journey.</p>
+        </div>
+        <div class="relative mb-24">
+          <div class="hidden md:block absolute top-1/2 left-0 w-full h-px bg-primary/20 -translate-y-1/2 z-0" aria-hidden="true"></div>
+          <div class="grid md:grid-cols-4 gap-12">
+            <div class="relative z-10 bg-background group">
+              <div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <span class="material-symbols-outlined text-3xl" aria-hidden="true">agriculture</span>
+              </div>
+              <div class="text-center space-y-2">
+                <h3 class="font-headline-md text-headline-md text-deep-forest">Sourcing</h3>
+                <p class="font-body-md text-on-surface-variant">Direct selection from the best orchards.</p>
+              </div>
+            </div>
+            <div class="relative z-10 bg-background group">
+              <div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <span class="material-symbols-outlined text-3xl" aria-hidden="true">verified</span>
+              </div>
+              <div class="text-center space-y-2">
+                <h3 class="font-headline-md text-headline-md text-deep-forest">Quality Control</h3>
+                <p class="font-body-md text-on-surface-variant">ISO &amp; HACCP standard laboratory analysis.</p>
+              </div>
+            </div>
+            <div class="relative z-10 bg-background group">
+              <div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <span class="material-symbols-outlined text-3xl" aria-hidden="true">inventory_2</span>
+              </div>
+              <div class="text-center space-y-2">
+                <h3 class="font-headline-md text-headline-md text-deep-forest">Packaging</h3>
+                <p class="font-body-md text-on-surface-variant">Maintaining freshness through modern bags.</p>
+              </div>
+            </div>
+            <div class="relative z-10 bg-background group">
+              <div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <span class="material-symbols-outlined text-3xl" aria-hidden="true">public</span>
+              </div>
+              <div class="text-center space-y-2">
+                <h3 class="font-headline-md text-headline-md text-deep-forest">Global Logistics</h3>
+                <p class="font-body-md text-on-surface-variant">Fast global delivery via all major routes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-surface-container p-8 md:p-12 rounded-2xl">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <img alt="Industrial nut packaging and palletized warehouse storage" class="rounded-lg shadow-lg w-full" src="./public/images/packaging-warehouse.jpg" loading="lazy" width="640" height="480" />
+            </div>
+            <div class="space-y-6">
+              <h3 class="font-headline-lg text-headline-lg text-deep-forest">Packaging Options</h3>
+              <p class="font-body-lg text-on-surface-variant">We provide a wide range of industrial and consumer-ready packaging solutions tailored to maintain flavor integrity during transit.</p>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="flex items-center gap-2"><span class="w-2 h-2 bg-primary rounded-full shrink-0" aria-hidden="true"></span><span class="font-label-lg">Jute Bags</span></div>
+                <div class="flex items-center gap-2"><span class="w-2 h-2 bg-primary rounded-full shrink-0" aria-hidden="true"></span><span class="font-label-lg">PP Bags</span></div>
+                <div class="flex items-center gap-2"><span class="w-2 h-2 bg-primary rounded-full shrink-0" aria-hidden="true"></span><span class="font-label-lg">Vacuum-Sealed</span></div>
+                <div class="flex items-center gap-2"><span class="w-2 h-2 bg-primary rounded-full shrink-0" aria-hidden="true"></span><span class="font-label-lg">Big Bags (Jumbo)</span></div>
+                <div class="flex items-center gap-2 col-span-2"><span class="w-2 h-2 bg-primary rounded-full shrink-0" aria-hidden="true"></span><span class="font-label-lg">Custom Private-Label Packaging</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="py-section-gap bg-surface-container-low" id="contact">
+      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="grid md:grid-cols-2 gap-16">
+          <div class="space-y-12">
+            <div class="space-y-4">
+              <h2 class="font-headline-lg text-headline-lg text-deep-forest">Contact Us</h2>
+              <p class="font-body-lg text-body-lg text-on-surface-variant">Inquire for wholesale and partnership offers. Our team will respond to you within 24 hours.</p>
+            </div>
+            <address class="space-y-8 not-italic">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-primary/10 rounded flex items-center justify-center text-primary shrink-0" aria-hidden="true">
+                  <span class="material-symbols-outlined">location_on</span>
+                </div>
+                <div>
+                  <h3 class="font-label-lg text-label-lg text-deep-forest uppercase">Office</h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant">115 Heydar Aliyev Ave, Baku, Azerbaijan</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-primary/10 rounded flex items-center justify-center text-primary shrink-0" aria-hidden="true">
+                  <span class="material-symbols-outlined">phone_in_talk</span>
+                </div>
+                <div>
+                  <h3 class="font-label-lg text-label-lg text-deep-forest uppercase">Phone</h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant">+994 50 123 45 67<br>+994 12 987 65 43</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-primary/10 rounded flex items-center justify-center text-primary shrink-0" aria-hidden="true">
+                  <span class="material-symbols-outlined">mail</span>
+                </div>
+                <div>
+                  <h3 class="font-label-lg text-label-lg text-deep-forest uppercase">Email</h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant">
+                    <a href="mailto:export@agorisglobal.com" class="hover:text-primary transition-colors">export@agorisglobal.com</a><br>
+                    <a href="mailto:info@agorisglobal.com" class="hover:text-primary transition-colors">info@agorisglobal.com</a>
+                  </p>
+                </div>
+              </div>
+            </address>
+          </div>
+          <div class="bg-surface-container-lowest p-8 md:p-12 rounded-lg shadow-xl border border-primary/5">
+            <form id="contact-form" class="space-y-6" novalidate>
+              <div id="form-status" class="hidden rounded p-4 font-body-md text-body-md" role="status" aria-live="polite"></div>
+              <div class="space-y-2">
+                <label for="inquiry-type" class="font-label-lg text-label-lg text-on-surface-variant">Inquiry Type</label>
+                <select id="inquiry-type" name="inquiryType" class="w-full bg-transparent border-0 border-b border-primary/20 focus:border-primary focus:ring-0 px-0 py-2 transition-colors font-body-md" required>
+                  <option value="general">General Inquiry</option>
+                  <option value="sample">Request a Sample</option>
+                </select>
+              </div>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-2">
+                  <label for="contact-name" class="font-label-lg text-label-lg text-on-surface-variant">Name</label>
+                  <input id="contact-name" name="name" class="w-full bg-transparent border-0 border-b border-primary/20 focus:border-primary focus:ring-0 px-0 py-2 transition-colors" placeholder="Your Name" type="text" autocomplete="name" required minlength="2" />
+                </div>
+                <div class="space-y-2">
+                  <label for="contact-email" class="font-label-lg text-label-lg text-on-surface-variant">Email</label>
+                  <input id="contact-email" name="email" class="w-full bg-transparent border-0 border-b border-primary/20 focus:border-primary focus:ring-0 px-0 py-2 transition-colors" placeholder="Your Email Address" type="email" autocomplete="email" required />
+                </div>
+              </div>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-2">
+                  <label for="product-interest" class="font-label-lg text-label-lg text-on-surface-variant">Product Interest</label>
+                  <select id="product-interest" name="productInterest" class="w-full bg-transparent border-0 border-b border-primary/20 focus:border-primary focus:ring-0 px-0 py-2 transition-colors font-body-md" required>
+                    <option value="almonds">Almonds</option>
+                    <option value="cashews">Cashews</option>
+                    <option value="hazelnuts">Hazelnuts</option>
+                    <option value="raisins">Raisins</option>
+                    <option value="macadamia">Macadamia</option>
+                  </select>
+                </div>
+                <div class="space-y-2">
+                  <label for="quantity" class="font-label-lg text-label-lg text-on-surface-variant">Estimated Quantity (kg)</label>
+                  <input id="quantity" name="quantity" class="w-full bg-transparent border-0 border-b border-primary/20 focus:border-primary focus:ring-0 px-0 py-2 transition-colors" placeholder="e.g. 500kg" type="text" />
+                </div>
+              </div>
+              <div class="space-y-2">
+                <label for="message" class="font-label-lg text-label-lg text-on-surface-variant">Message</label>
+                <textarea id="message" name="message" class="w-full bg-transparent border-0 border-b border-primary/20 focus:border-primary focus:ring-0 px-0 py-2 transition-colors resize-none" placeholder="Tell us about your requirements..." rows="4" required minlength="10"></textarea>
+              </div>
+              <button id="contact-submit" class="w-full py-4 bg-primary text-on-primary font-label-lg text-label-lg rounded hover:opacity-90 transition-opacity flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed" type="submit">
+                Submit Inquiry
+                <span class="material-symbols-outlined" aria-hidden="true">send</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full bg-deep-forest border-t border-white/10">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-base max-w-container-max mx-auto py-12 px-margin-mobile md:px-margin-desktop">
+      <div class="space-y-4">
+        <div class="h-16 mb-4">
+          <img src="./public/images/logo-footer.png" alt="Agoris Global logo" class="h-full w-auto object-contain brightness-0 invert" width="160" height="64" />
+        </div>
+        <p class="text-surface-variant/80 font-body-md text-body-md max-w-xs">Premium Nut Exports. From orchards to global dining tables.</p>
+      </div>
+      <nav class="flex flex-wrap justify-center gap-x-8 gap-y-4" aria-label="Footer navigation">
+        <a class="text-surface-variant/80 font-label-md text-label-md hover:text-almond-cream transition-colors" href="#">Privacy Policy</a>
+        <a class="text-surface-variant/80 font-label-md text-label-md hover:text-almond-cream transition-colors" href="#">Terms of Service</a>
+        <a class="text-surface-variant/80 font-label-md text-label-md hover:text-almond-cream transition-colors" href="#quality">Certifications</a>
+        <a class="text-surface-variant/80 font-label-md text-label-md hover:text-almond-cream transition-colors" href="#process">Global Logistics</a>
+      </nav>
+      <div class="text-surface-variant/80 font-label-md text-label-md text-center md:text-right">
+        &copy; 2026 Agoris Global. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    (function () {
+      const toggle = document.getElementById('mobile-menu-toggle');
+      const menu = document.getElementById('mobile-menu');
+      if (!toggle || !menu) return;
+
+      const setOpen = (open) => {
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+        menu.classList.toggle('hidden', !open);
+        menu.classList.toggle('flex', open);
+        document.body.classList.toggle('overflow-hidden', open);
+        const icon = toggle.querySelector('.material-symbols-outlined');
+        if (icon) icon.textContent = open ? 'close' : 'menu';
+      };
+
+      toggle.addEventListener('click', () => {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+
+      menu.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => setOpen(false));
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+          setOpen(false);
+          toggle.focus();
+        }
+      });
+    })();
+
+    // Stagger animations
+    (function () {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+      document.querySelectorAll('.stagger-in').forEach((el) => observer.observe(el));
+    })();
+
+    // Header scroll (bg-surface, not white)
+    (function () {
+      const header = document.querySelector('header');
+      const nav = header && header.querySelector('nav');
+      if (!header) return;
+      const onScroll = () => {
+        if (window.scrollY > 50) {
+          header.classList.add('py-2', 'bg-surface/95', 'shadow-md');
+          header.classList.remove('h-20');
+          if (nav) nav.classList.remove('h-20');
+        } else {
+          header.classList.remove('py-2', 'bg-surface/95', 'shadow-md');
+          header.classList.add('h-20');
+          if (nav) nav.classList.add('h-20');
+        }
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
+
+    // Contact form validation (preview mode — no Formspree required)
+    (function () {
+      const form = document.getElementById('contact-form');
+      const status = document.getElementById('form-status');
+      if (!form || !status) return;
+
+      const showStatus = (message, type) => {
+        status.textContent = message;
+        status.classList.remove('hidden', 'bg-error-container', 'text-on-error-container', 'bg-primary-fixed', 'text-on-primary-fixed');
+        if (type === 'error') {
+          status.classList.add('bg-error-container', 'text-on-error-container');
+        } else {
+          status.classList.add('bg-primary-fixed', 'text-on-primary-fixed');
+        }
+      };
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        status.classList.add('hidden');
+        const name = form.elements.name;
+        const email = form.elements.email;
+        const message = form.elements.message;
+
+        if (!name.value.trim() || name.value.trim().length < 2) {
+          showStatus('Please enter your name (at least 2 characters).', 'error');
+          name.focus();
+          return;
+        }
+        if (!email.validity.valid) {
+          showStatus('Please enter a valid email address.', 'error');
+          email.focus();
+          return;
+        }
+        if (!message.value.trim() || message.value.trim().length < 10) {
+          showStatus('Please enter a message (at least 10 characters).', 'error');
+          message.focus();
+          return;
+        }
+
+        showStatus('Preview mode: form validated successfully. Connect Formspree in the Vite project to send emails.', 'success');
+        form.reset();
+      });
+    })();
+  </script>
+</body>
+</html>
