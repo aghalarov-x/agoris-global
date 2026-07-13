@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="ISO 22000">
+  <circle cx="60" cy="60" r="56" fill="none" stroke="#004a38" stroke-width="4"/>
+  <circle cx="60" cy="60" r="46" fill="none" stroke="#004a38" stroke-width="1.5"/>
+  <text x="60" y="52" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#004a38">ISO</text>
+  <text x="60" y="74" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#004a38">22000</text>
+  <text x="60" y="92" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="7" font-weight="600" letter-spacing="1.5" fill="#3f4944">FOOD SAFETY</text>
+</svg>

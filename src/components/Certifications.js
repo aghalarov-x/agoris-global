@@ -1,4 +1,21 @@
 export function renderCertifications() {
+  const certs = [
+    { name: 'ISO 22000', src: '/images/certs/iso-22000.svg', alt: 'ISO 22000 Food Safety certification' },
+    { name: 'BRC', src: '/images/certs/brc.svg', alt: 'BRC Global Standard for Food Safety' },
+    { name: 'Halal', src: '/images/certs/halal.svg', alt: 'Halal certification' },
+  ];
+
+  const certCards = certs
+    .map(
+      (cert) => `
+        <div class="aspect-square bg-surface-container flex flex-col items-center justify-center rounded border border-outline-variant p-3 group hover:border-primary transition-colors">
+          <img src="${cert.src}" alt="${cert.alt}" class="w-16 h-16 md:w-20 md:h-20 object-contain" width="80" height="80" loading="lazy" />
+          <span class="sr-only">${cert.name}</span>
+        </div>
+      `
+    )
+    .join('');
+
   return `
     <section class="py-section-gap bg-background" id="quality">
       <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
@@ -28,24 +45,7 @@ export function renderCertifications() {
               </ul>
             </div>
             <div class="grid gap-4 pt-8 grid-cols-3" aria-label="Certifications">
-              <div class="aspect-square bg-surface-container flex items-center justify-center rounded border border-outline-variant p-2 group hover:border-primary transition-colors">
-                <div class="text-center">
-                  <div class="text-[10px] font-bold text-on-surface-variant uppercase mb-1">ISO 22000</div>
-                  <div class="w-8 h-1 bg-primary/20 mx-auto" aria-hidden="true"></div>
-                </div>
-              </div>
-              <div class="aspect-square bg-surface-container flex items-center justify-center rounded border border-outline-variant p-2 group hover:border-primary transition-colors">
-                <div class="text-center">
-                  <div class="text-[10px] font-bold text-on-surface-variant uppercase mb-1">BRC</div>
-                  <div class="w-8 h-1 bg-primary/20 mx-auto" aria-hidden="true"></div>
-                </div>
-              </div>
-              <div class="aspect-square bg-surface-container flex items-center justify-center rounded border border-outline-variant p-2 group hover:border-primary transition-colors">
-                <div class="text-center">
-                  <div class="text-[10px] font-bold text-on-surface-variant uppercase mb-1">HALAL</div>
-                  <div class="w-8 h-1 bg-primary/20 mx-auto" aria-hidden="true"></div>
-                </div>
-              </div>
+              ${certCards}
             </div>
           </div>
           <div class="stagger-in">

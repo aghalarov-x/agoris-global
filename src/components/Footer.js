@@ -2,13 +2,20 @@ import { site } from '../data/site.js';
 
 export function renderFooter() {
   const footerLinks = site.footerLinks
-    .map(
-      (link) => `
+    .map((link) => {
+      if (!link.href) {
+        return `
+          <span class="text-surface-variant/80 font-label-md text-label-md cursor-default select-none">
+            ${link.label}
+          </span>
+        `;
+      }
+      return `
         <a class="text-surface-variant/80 font-label-md text-label-md hover:text-almond-cream transition-colors" href="${link.href}">
           ${link.label}
         </a>
-      `
-    )
+      `;
+    })
     .join('');
 
   return `

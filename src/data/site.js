@@ -13,11 +13,11 @@ export const site = {
   contact: {
     office: {
       label: 'Office',
-      value: '115 Heydar Aliyev Ave, Baku, Azerbaijan',
+      value: '5772 SE 78TH AVE, Hillsboro, Oregon',
     },
     phone: {
       label: 'Phone',
-      value: ['+994 77 573 26 68'],
+      value: ['+1 213 768 5250'],
     },
     email: {
       label: 'Email',
@@ -25,8 +25,8 @@ export const site = {
     },
   },
   footerLinks: [
-    { href: '#', label: 'Privacy Policy' },
-    { href: '#', label: 'Terms of Service' },
+    { href: null, label: 'Privacy Policy' },
+    { href: null, label: 'Terms of Service' },
     { href: '#quality', label: 'Certifications' },
     { href: '#process', label: 'Global Logistics' },
   ],

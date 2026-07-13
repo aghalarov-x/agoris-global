@@ -6,9 +6,9 @@ export function renderAbout() {
           <div class="relative group stagger-in">
             <div class="aspect-[4/5] overflow-hidden rounded-lg shadow-2xl">
               <img
-                alt="Modern commercial freight truck transporting premium nuts on a sun-drenched highway"
+                alt="Woman harvesting hazelnuts in an orchard, holding a basket of fresh nuts"
                 class="w-full h-full object-cover"
-                src="/images/about-truck.jpg"
+                src="/images/about-orchard.png"
                 loading="lazy"
                 width="640"
                 height="800"

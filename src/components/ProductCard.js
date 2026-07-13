@@ -15,6 +15,7 @@ export function renderProductCard(product) {
     : 'w-full py-3 border border-primary text-primary font-label-lg text-label-lg rounded hover:bg-primary hover:text-white transition-colors duration-300';
 
   const buttonAttrs = product.disabled ? 'disabled aria-disabled="true"' : 'type="button"';
+  const imageMotion = product.imageClass || 'group-hover:scale-105';
 
   return `
     <article class="bg-surface-container-lowest rounded-lg overflow-hidden group hover:shadow-2xl transition-all duration-500 border border-primary/5 relative">
@@ -22,7 +23,7 @@ export function renderProductCard(product) {
       <div class="${imageClasses}">
         <img
           alt="${product.imageAlt}"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+          class="w-full h-full object-cover transition-transform duration-700 ${imageMotion}"
           src="${product.image}"
           loading="lazy"
           width="400"

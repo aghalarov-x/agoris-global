@@ -6,6 +6,7 @@ export const products = [
       'Nonpareil and Carmel varieties. Sourced from the USA, premium crunchy texture and consistent quality.',
     image: '/images/products/almonds.jpg',
     imageAlt: 'Premium raw almonds',
+    imageClass: 'scale-[1.35] object-[center_40%] group-hover:scale-[1.4]',
     badge: null,
     disabled: false,
     grayscale: false,
