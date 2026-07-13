@@ -16,11 +16,11 @@ export const site = {
     },
     phone: {
       label: 'Phone',
-      value: ['+994 50 123 45 67', '+994 12 987 65 43'],
+      value: ['+994 77 573 26 68'],
     },
     email: {
       label: 'Email',
-      value: ['export@agorisglobal.com', 'info@agorisglobal.com'],
+      value: ['ag@agorisglobal.com'],
     },
   },
   footerLinks: [

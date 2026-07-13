@@ -16,15 +16,6 @@ export function renderProducts() {
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           ${cards}
         </div>
-        <div class="mt-16 text-center">
-          <a
-            class="inline-flex items-center gap-2 px-8 py-3 bg-deep-forest text-on-primary font-label-lg text-label-lg rounded hover:opacity-90 transition-opacity"
-            href="#contact"
-          >
-            <span class="material-symbols-outlined" aria-hidden="true">description</span>
-            Download Full Spec Sheet (PDF)
-          </a>
-        </div>
       </div>
     </section>
   `;
