@@ -13,10 +13,10 @@ export function renderHero() {
       <div class="relative z-20 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full">
         <div class="max-w-2xl text-white space-y-6">
           <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg leading-tight">
-            Premium Nut Exports to the Global Market
+            Delivering Premium Nuts to Global Markets
           </h1>
           <p class="font-body-lg text-body-lg text-almond-cream/90 leading-relaxed">
-            Distributing the highest quality hazelnuts, almonds, and cashews to global markets. World-class supply with our commitment to quality and reliability.
+            Distributing the highest quality premium nuts and dried fruits to global markets. World-class supply with our commitment to quality and reliability.
           </p>
           <div class="pt-8">
             <a
