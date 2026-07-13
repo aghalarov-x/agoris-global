@@ -29,13 +29,13 @@ export function renderHeader() {
         class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-20"
         aria-label="Main navigation"
       >
-        <a href="/" class="block h-12" aria-label="${site.name} home">
+        <a href="/" class="block h-11 md:h-12" aria-label="${site.name} home">
           <img
             src="/images/logo.png"
             alt="${site.name} logo"
-            class="h-full w-auto object-contain"
-            width="160"
-            height="48"
+            class="h-full w-auto max-w-[220px] md:max-w-[260px] object-contain object-left"
+            width="260"
+            height="50"
           />
         </a>
 
