@@ -60,6 +60,7 @@ export function renderContact() {
           <div class="bg-surface-container-lowest p-8 md:p-12 rounded-lg shadow-xl border border-primary/5">
             <form id="contact-form" class="space-y-6" novalidate>
               <div id="form-status" class="hidden rounded p-4 font-body-md text-body-md" role="status" aria-live="polite"></div>
+              <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
               <div class="space-y-2">
                 <label for="inquiry-type" class="font-label-lg text-label-lg text-on-surface-variant">Inquiry Type</label>
@@ -204,31 +205,36 @@ export function initContactForm() {
 
     if (!validateForm()) return;
 
-    const endpoint = site.formspreeEndpoint;
-    if (!endpoint) {
-      showStatus(
-        'Form is not configured yet. Add your Formspree endpoint to a .env file as VITE_FORMSPREE_ENDPOINT.',
-        'error'
-      );
+    const recipient = site.formRecipient || site.contact.email.value[0];
+    if (!recipient) {
+      showStatus('Contact email is not configured.', 'error');
       return;
     }
 
     submitBtn.disabled = true;
     const formData = new FormData(form);
+    const payload = Object.fromEntries(formData.entries());
+    payload._subject = `Agoris Global inquiry from ${payload.name || 'website'}`;
+    payload._template = 'table';
+    payload._captcha = 'false';
 
     try {
-      const response = await fetch(endpoint, {
+      const response = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(recipient)}`, {
         method: 'POST',
-        body: formData,
-        headers: { Accept: 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify(payload),
       });
+
+      const data = await response.json().catch(() => ({}));
 
       if (response.ok) {
         showStatus('Thank you! Your inquiry has been sent. We will respond within 24 hours.', 'success');
         form.reset();
       } else {
-        const data = await response.json().catch(() => ({}));
-        showStatus(data.error || 'Something went wrong. Please try again or email us directly.', 'error');
+        showStatus(data.message || data.error || 'Something went wrong. Please try again or email us directly.', 'error');
       }
     } catch {
       showStatus('Network error. Please check your connection and try again.', 'error');

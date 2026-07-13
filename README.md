@@ -12,21 +12,13 @@ npm run dev
 
 Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-## Contact form setup (Formspree)
+## Contact form
 
-1. Create a free account at [formspree.io](https://formspree.io)
-2. Create a new form and copy your endpoint URL (e.g. `https://formspree.io/f/xxxxxxxx`)
-3. Copy `.env.example` to `.env`:
-   ```bash
-   cp .env.example .env
-   ```
-4. Paste your URL into `.env`:
-   ```
-   VITE_FORMSPREE_ENDPOINT=https://formspree.io/f/xxxxxxxx
-   ```
-5. Restart the dev server (`npm run dev`)
+The contact form emails **ag@agorisglobal.com** using [FormSubmit](https://formsubmit.co) — no API key or Vercel env vars needed.
 
-Submissions will arrive in your Formspree inbox. To use a different service, edit `src/components/Contact.js` and change the `fetch` call in `initContactForm()`.
+**Important (one-time):** After the site is live, submit a test inquiry once. FormSubmit will send an activation email to `ag@agorisglobal.com`. Open it and click **Confirm email**. After that, every submission arrives as a normal email.
+
+To change the recipient address, edit `formRecipient` in `src/data/site.js`.
 
 ## Images
 
@@ -60,9 +52,8 @@ The static site is output to `dist/`.
 | Output Directory | `dist` |
 | Install Command | `npm install` |
 
-4. (Optional) Add environment variable for the contact form:
-   - Name: `VITE_FORMSPREE_ENDPOINT`
-   - Value: `https://formspree.io/f/your-form-id`
+4. (Optional) Contact form already sends to `ag@agorisglobal.com` via FormSubmit — no env vars required.
+   After the first live submission, confirm the activation email FormSubmit sends to that inbox.
 
 5. Click **Deploy**
 

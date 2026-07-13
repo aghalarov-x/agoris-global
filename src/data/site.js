@@ -2,7 +2,8 @@ export const site = {
   name: 'Agoris Global',
   tagline: 'Premium Nut Exports. From orchards to global dining tables.',
   url: 'https://agorisglobal.com',
-  formspreeEndpoint: import.meta.env.VITE_FORMSPREE_ENDPOINT || '',
+  /** Inquiries are emailed here via FormSubmit (no API key needed). */
+  formRecipient: 'ag@agorisglobal.com',
   navLinks: [
     { href: '#about', label: 'About Us' },
     { href: '#products', label: 'Products' },
