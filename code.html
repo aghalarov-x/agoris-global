@@ -274,12 +274,12 @@
     
     <section class="py-section-gap bg-background" id="about">
       <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-        <div class="grid md:grid-cols-2 gap-16 items-center">
-          <div class="relative group stagger-in">
-            <div class="aspect-[4/5] overflow-hidden rounded-lg shadow-2xl">
+        <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-start lg:items-center">
+          <div class="relative group stagger-in w-full">
+            <div class="aspect-[4/5] overflow-hidden rounded-lg shadow-2xl bg-surface-container">
               <img
-                alt="Woman harvesting hazelnuts in an orchard, holding a basket of fresh nuts"
-                class="w-full h-full object-cover"
+                alt="Wooden bowls of almonds, hazelnuts, and cashews with fresh leaves"
+                class="w-full h-full object-cover object-center"
                 src="./public/images/about-orchard.png"
                 loading="lazy"
                 width="640"
@@ -288,7 +288,7 @@
             </div>
             <div class="absolute -bottom-8 -right-8 w-48 h-48 bg-primary-container/20 rounded-full blur-3xl -z-10" aria-hidden="true"></div>
           </div>
-          <div class="space-y-8 stagger-in">
+          <div class="space-y-8 stagger-in min-w-0">
             <div class="space-y-2">
               <span class="text-primary font-label-lg text-label-lg tracking-widest uppercase">Who We Are</span>
               <h2 class="font-headline-lg text-headline-lg text-deep-forest">Commitment to Global Excellence</h2>
@@ -439,8 +439,8 @@
     
     <section class="py-section-gap bg-background" id="quality">
       <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-        <div class="grid md:grid-cols-2 gap-16 items-center">
-          <div class="space-y-8 stagger-in">
+        <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-start lg:items-center">
+          <div class="space-y-8 stagger-in min-w-0">
             <div class="space-y-2">
               <span class="text-primary font-label-lg text-label-lg tracking-widest uppercase">Our Standard</span>
               <h2 class="font-headline-lg text-headline-lg text-deep-forest">Quality &amp; Traceability</h2>
@@ -451,42 +451,75 @@
               </p>
               <ul class="space-y-4">
                 <li class="flex items-start gap-3">
-                  <span class="material-symbols-outlined text-primary mt-1" aria-hidden="true">check_circle</span>
-                  <span><strong>Strict Origin Vetting:</strong> We only partner with audited orchards meeting global safety standards.</span>
+                  <span class="material-symbols-outlined text-primary mt-1 shrink-0" aria-hidden="true">check_circle</span>
+                  <span class="min-w-0"><strong>Strict Origin Vetting:</strong> We only partner with audited orchards meeting global safety standards.</span>
                 </li>
                 <li class="flex items-start gap-3">
-                  <span class="material-symbols-outlined text-primary mt-1" aria-hidden="true">check_circle</span>
-                  <span><strong>Laboratory Testing:</strong> Compulsory moisture, aflatoxin, and microbiological testing per shipment.</span>
+                  <span class="material-symbols-outlined text-primary mt-1 shrink-0" aria-hidden="true">check_circle</span>
+                  <span class="min-w-0"><strong>Laboratory Testing:</strong> Compulsory moisture, aflatoxin, and microbiological testing per shipment.</span>
                 </li>
                 <li class="flex items-start gap-3">
-                  <span class="material-symbols-outlined text-primary mt-1" aria-hidden="true">check_circle</span>
-                  <span><strong>Full Traceability:</strong> Every bag is barcoded for batch-level tracking from farm to port.</span>
+                  <span class="material-symbols-outlined text-primary mt-1 shrink-0" aria-hidden="true">check_circle</span>
+                  <span class="min-w-0"><strong>Full Traceability:</strong> Every bag is barcoded for batch-level tracking from farm to port.</span>
                 </li>
               </ul>
             </div>
-            <div class="grid gap-4 pt-8 grid-cols-3" aria-label="Certifications">
+            <div class="grid gap-4 sm:gap-6 pt-8 grid-cols-3" aria-label="Certifications">
               
-        <div class="aspect-square bg-surface-container flex flex-col items-center justify-center rounded border border-outline-variant p-3 group hover:border-primary transition-colors">
-          <img src="./public/images/certs/iso-22000.svg" alt="ISO 22000 Food Safety certification" class="w-16 h-16 md:w-20 md:h-20 object-contain" width="80" height="80" loading="lazy" />
-          <span class="sr-only">ISO 22000</span>
-        </div>
+        <figure class="flex flex-col items-center gap-3 min-w-0">
+          <div class="w-full aspect-square bg-white flex items-center justify-center rounded-lg border border-outline-variant p-4 md:p-5 group hover:border-primary transition-colors overflow-hidden">
+            <img
+              src="./public/images/certs/iso-22000.png"
+              alt="ISO 22000 Food Safety certification seal"
+              class="max-w-full max-h-full w-auto h-auto object-contain"
+              width="120"
+              height="120"
+              loading="lazy"
+            />
+          </div>
+          <figcaption class="font-label-md text-label-md text-on-surface-variant text-center tracking-wide uppercase">
+            ISO 22000
+          </figcaption>
+        </figure>
       
-        <div class="aspect-square bg-surface-container flex flex-col items-center justify-center rounded border border-outline-variant p-3 group hover:border-primary transition-colors">
-          <img src="./public/images/certs/brc.svg" alt="BRC Global Standard for Food Safety" class="w-16 h-16 md:w-20 md:h-20 object-contain" width="80" height="80" loading="lazy" />
-          <span class="sr-only">BRC</span>
-        </div>
+        <figure class="flex flex-col items-center gap-3 min-w-0">
+          <div class="w-full aspect-square bg-white flex items-center justify-center rounded-lg border border-outline-variant p-4 md:p-5 group hover:border-primary transition-colors overflow-hidden">
+            <img
+              src="./public/images/certs/brc.png"
+              alt="BRC Food certificated logo"
+              class="max-w-full max-h-full w-auto h-auto object-contain"
+              width="120"
+              height="120"
+              loading="lazy"
+            />
+          </div>
+          <figcaption class="font-label-md text-label-md text-on-surface-variant text-center tracking-wide uppercase">
+            BRC
+          </figcaption>
+        </figure>
       
-        <div class="aspect-square bg-surface-container flex flex-col items-center justify-center rounded border border-outline-variant p-3 group hover:border-primary transition-colors">
-          <img src="./public/images/certs/halal.svg" alt="Halal certification" class="w-16 h-16 md:w-20 md:h-20 object-contain" width="80" height="80" loading="lazy" />
-          <span class="sr-only">Halal</span>
-        </div>
+        <figure class="flex flex-col items-center gap-3 min-w-0">
+          <div class="w-full aspect-square bg-white flex items-center justify-center rounded-lg border border-outline-variant p-4 md:p-5 group hover:border-primary transition-colors overflow-hidden">
+            <img
+              src="./public/images/certs/halal.png"
+              alt="Halal quality product certified food seal"
+              class="max-w-full max-h-full w-auto h-auto object-contain"
+              width="120"
+              height="120"
+              loading="lazy"
+            />
+          </div>
+          <figcaption class="font-label-md text-label-md text-on-surface-variant text-center tracking-wide uppercase">
+            Halal
+          </figcaption>
+        </figure>
       
             </div>
           </div>
-          <div class="stagger-in">
+          <div class="stagger-in w-full min-w-0">
             <img
               alt="Food laboratory professionals examining nut samples for quality control"
-              class="rounded-lg shadow-xl w-full"
+              class="rounded-lg shadow-xl w-full h-auto object-cover"
               src="./public/images/quality-lab.jpg"
               loading="lazy"
               width="640"

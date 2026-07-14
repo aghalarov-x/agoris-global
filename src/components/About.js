@@ -2,12 +2,12 @@ export function renderAbout() {
   return `
     <section class="py-section-gap bg-background" id="about">
       <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-        <div class="grid md:grid-cols-2 gap-16 items-center">
-          <div class="relative group stagger-in">
-            <div class="aspect-[4/5] overflow-hidden rounded-lg shadow-2xl">
+        <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-start lg:items-center">
+          <div class="relative group stagger-in w-full">
+            <div class="aspect-[4/5] overflow-hidden rounded-lg shadow-2xl bg-surface-container">
               <img
-                alt="Woman harvesting hazelnuts in an orchard, holding a basket of fresh nuts"
-                class="w-full h-full object-cover"
+                alt="Wooden bowls of almonds, hazelnuts, and cashews with fresh leaves"
+                class="w-full h-full object-cover object-center"
                 src="/images/about-orchard.png"
                 loading="lazy"
                 width="640"
@@ -16,7 +16,7 @@ export function renderAbout() {
             </div>
             <div class="absolute -bottom-8 -right-8 w-48 h-48 bg-primary-container/20 rounded-full blur-3xl -z-10" aria-hidden="true"></div>
           </div>
-          <div class="space-y-8 stagger-in">
+          <div class="space-y-8 stagger-in min-w-0">
             <div class="space-y-2">
               <span class="text-primary font-label-lg text-label-lg tracking-widest uppercase">Who We Are</span>
               <h2 class="font-headline-lg text-headline-lg text-deep-forest">Commitment to Global Excellence</h2>
