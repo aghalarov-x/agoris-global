@@ -20,6 +20,20 @@ The contact form emails **ag@agorisglobal.com** using [FormSubmit](https://forms
 
 To change the recipient address, edit `formRecipient` in `src/data/site.js`.
 
+## Offline preview (`code.html`)
+
+After content or design changes, regenerate the offline HTML file:
+
+```bash
+npm run sync:preview
+```
+
+This updates:
+- `code.html` and `preview.html` inside the project folder
+- `Desktop/code.html` (image paths point to `Agoris website/public/`)
+
+Open either file in your browser to preview offline. Prefer the project `code.html` if images do not load from Desktop.
+
 ## Images
 
 Temporary Google-hosted images are downloaded into `public/images/`:
