@@ -1,4 +1,30 @@
+import { site } from '../data/site.js';
+
 export function renderAbout() {
+  const groupCompanies = site.groupCompanies
+    .map(
+      (company) => `
+        <a
+          href="${company.url}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group flex flex-col sm:flex-row sm:items-center justify-between gap-5 rounded-lg border border-primary/15 bg-surface-container-lowest p-5 hover:border-primary/40 hover:shadow-lg transition-all duration-300"
+          aria-label="Visit ${company.name} website (opens in a new tab)"
+        >
+          <div class="min-w-0">
+            <span class="block text-primary font-label-md text-label-md tracking-widest uppercase mb-1">Our Group</span>
+            <h3 class="font-headline-md text-headline-md text-deep-forest">${company.name}</h3>
+            <p class="mt-2 font-body-md text-body-md text-on-surface-variant">${company.description}</p>
+          </div>
+          <span class="inline-flex shrink-0 items-center gap-2 text-primary font-label-lg text-label-lg">
+            Visit website
+            <span class="material-symbols-outlined transition-transform group-hover:translate-x-1" aria-hidden="true">open_in_new</span>
+          </span>
+        </a>
+      `
+    )
+    .join('');
+
   return `
     <section class="py-section-gap bg-background" id="about">
       <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
@@ -38,6 +64,9 @@ export function renderAbout() {
                 <div class="text-primary font-bold text-5xl mb-2">25+</div>
                 <div class="text-on-surface-variant font-label-md text-label-md">Export Countries</div>
               </div>
+            </div>
+            <div class="pt-2">
+              ${groupCompanies}
             </div>
           </div>
         </div>

@@ -4,6 +4,14 @@ export const site = {
   url: 'https://agorisglobal.com',
   /** Inquiries are emailed here via FormSubmit (no API key needed). */
   formRecipient: 'ag@agorisglobal.com',
+  groupCompanies: [
+    {
+      name: 'AzerNuts LLC',
+      url: 'https://azernuts.us/?lang=en',
+      description:
+        'Part of Agoris Global, specializing in premium Azerbaijani hazelnuts for international markets.',
+    },
+  ],
   navLinks: [
     { href: '#about', label: 'About Us' },
     { href: '#products', label: 'Products' },
