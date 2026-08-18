@@ -1,8 +1,11 @@
 export function renderCertifications() {
   const certs = [
     { name: 'ISO 22000', src: '/images/certs/iso-22000.png', alt: 'ISO 22000 Food Safety certification seal' },
+    { name: 'ISO 9001', src: '/images/certs/iso-9001.jpg', alt: 'ISO 9001 Quality Management certification seal' },
     { name: 'BRC', src: '/images/certs/brc.png', alt: 'BRC Food certificated logo' },
+    { name: 'HACCP', src: '/images/certs/haccp.jpg', alt: 'HACCP food safety certified seal' },
     { name: 'Halal', src: '/images/certs/halal.png', alt: 'Halal quality product certified food seal' },
+    { name: 'Kosher', src: '/images/certs/kosher.png', alt: 'Certified Kosher seal' },
   ];
 
   const certCards = certs
@@ -55,7 +58,7 @@ export function renderCertifications() {
                 </li>
               </ul>
             </div>
-            <div class="grid gap-4 sm:gap-6 pt-8 grid-cols-3" aria-label="Certifications">
+            <div class="grid gap-4 sm:gap-6 pt-8 grid-cols-2 sm:grid-cols-3" aria-label="Certifications">
               ${certCards}
             </div>
           </div>
