@@ -33,7 +33,7 @@ export function renderCertifications() {
   return `
     <section class="py-section-gap bg-background" id="quality">
       <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-        <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-start lg:items-center">
+        <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
           <div class="space-y-8 stagger-in min-w-0">
             <div class="space-y-2">
               <span class="text-primary font-label-lg text-label-lg tracking-widest uppercase">Our Standard</span>
@@ -62,7 +62,7 @@ export function renderCertifications() {
               ${certCards}
             </div>
           </div>
-          <div class="stagger-in w-full min-w-0">
+          <div class="stagger-in w-full min-w-0 md:mt-8">
             <img
               alt="Food laboratory professionals examining nut samples for quality control"
               class="rounded-lg shadow-xl w-full h-auto object-cover"
